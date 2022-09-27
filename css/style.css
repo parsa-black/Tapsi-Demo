@@ -1,0 +1,56 @@
+ /* Rest */
+ *,
+ *::before,
+ *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+
+  /* root variable */
+  :root{
+    --color-primaray: #ff5722;
+    --color-second-light: #fff6f2;
+    --color-second-dark: #ffa589; 
+    --color-navbar: #f8f8f8;
+    --color-heading: #000;
+    --color-white: #fff;
+    --color-body: #333; /* font colot */
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body{
+    color: var(--color-body);
+    font-size: 1.4rem ;
+  }
+
+  h1,h2,h3 {
+    color: var(--color-heading);
+    font-weight: 700;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 2.2rem;
+  }
+
+  @media screen and (min-width: 1024px){
+    body{
+        font-size: 1.8rem;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 3.5rem;
+    }
+  }

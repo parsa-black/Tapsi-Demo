@@ -23,7 +23,8 @@
     font-size: 62.5%;
   }
 
-  body{
+  body , 
+  button {
     color: var(--color-body);
     font-size: 1.4rem ;
   }
@@ -32,7 +33,7 @@
     color: var(--color-heading);
     font-weight: 700; 
   }
-
+  
   h1{
     font-size: 2.5rem;
   }
@@ -54,3 +55,42 @@
         font-size: 3.5rem;
     }
   }
+
+  /* button */
+  .btn{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding:  2rem 2.5rem;
+    border-radius: 8px;
+    margin: 1rem 1rem 0 0;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.4rem;
+  }
+
+  .btn--primary{
+    background: var(--color-primaray);
+    color: var(--color-white);
+  }
+
+.btn--second{
+  background-color: var(--color-second-dark);
+  color: var(--color-white);
+}
+
+.btn--block{
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .btn{
+    font-size: 1.6rem;
+  }
+  .btn--block{
+  font-size: 2rem;
+}
+
+}

@@ -33,7 +33,7 @@
     color: var(--color-heading);
     font-weight: 700; 
   }
-  
+
   h1{
     font-size: 2.5rem;
   }
@@ -85,12 +85,43 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .btn{
     font-size: 1.6rem;
   }
   .btn--block{
   font-size: 2rem;
 }
+}
 
+/* Badge */
+
+.badge{
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: auto;
+  outline: 0;
+  border: 2px solid var(--color-primaray);
+  padding: 0.5rem 1.2rem;
+  margin: 0;
+  background-color: var(--color-white);
+  color:  var(--color-primaray);
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 32px;
+}
+
+.badge--primary{
+  background-color: var(--color-primaray);
+  color: var(--color-white);
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .badge{
+    font-size: 1.4rem;
+  }
+  
 }

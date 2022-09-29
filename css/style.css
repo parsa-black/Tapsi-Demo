@@ -11,6 +11,7 @@
   /* root variable */
   :root{
     --color-primaray: #ff5722;
+    --color-primary-light: #ff7a50;
     --color-second-light: #fff6f2;
     --color-second-dark: #ffa589; 
     --color-navbar: #f8f8f8;
@@ -143,7 +144,6 @@
   margin: 1.5rem;
 }
 
-
 @media screen and (min-width: 1024px) {
 
   .list--tick .list__item{
@@ -151,4 +151,75 @@
     margin-bottom: 2rem;
   }
   
+}
+
+/* plan */
+
+.block-plan{
+  display: grid;
+  gap: 2rem 3rem;
+}
+
+.plan{
+  max-width: 400px;
+}
+
+.card{
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px #f6f6f6;
+}
+
+.card_header{
+  color: var(--color-white);
+  padding: 3rem 2.5rem;
+}
+
+.card_body{
+  background-color: var(--color-white);
+  padding: 3rem 2.5rem;
+}
+
+.card--pirmary.card_header{
+  background-color: var(--color-primary-light);
+  padding: 3rem 2.5rem;
+}
+
+.card--second.card_header{
+    background-color: var(--color-second-dark);
+    padding: 3rem 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .block-plan{
+    grid-template-columns:repeat(3, 1fr);
+  }
+  
+}
+
+/* Header */
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.span-header{
+  font-size: 1.2rem;
+}
+
+.span-block{
+  display: block;
+  font-size: 2.5rem;
+}
+
+.span-price{
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.span-cycle{
+  font-size: 1.4rem;
 }

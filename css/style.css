@@ -24,12 +24,11 @@
     font-size: 62.5%;
   }
 
-  body , 
-  button {
+  body {
     color: var(--color-body);
     font-size: 1.4rem ;
+    line-height: 1.6;
   }
-
   h1,h2,h3 {
     color: var(--color-heading);
     font-weight: 700; 
@@ -41,6 +40,7 @@
 
   h2{
     font-size: 2.2rem;
+    margin-bottom: 1.5rem;
   }
 
   @media screen and (min-width: 1024px){
@@ -250,4 +250,50 @@
 .container{
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* feature */
+
+.feature{
+  display: grid;
+}
+
+.feature__text{
+  margin-bottom: 1.5rem; 
+}
+
+.feature .btn{
+  padding: 1.5rem 3rem;
+}
+
+.feature__image > img{
+  width: 70%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.feature__image{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .feature{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .feature__image{
+    order: 2;
+    margin-bottom: 0;
+  }
+  .feature__detail{
+    order: 1;
+  }
+  .feature__image > img{
+    width: 100%;
+  }
+  
 }

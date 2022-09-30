@@ -140,7 +140,7 @@
   background: url(../assets/icon/tick_box.svg) no-repeat;
   background-position: right center;
   background-size: 3rem;
-  padding: 3rem;
+  padding: 1rem 3rem 0 0;
   margin: 1.5rem;
 }
 
@@ -157,11 +157,14 @@
 
 .block-plan{
   display: grid;
-  gap: 2rem 3rem;
+  gap: 5rem 3rem;
+  margin-top: 4rem;
 }
 
 .plan{
-  max-width: 400px;
+  max-width: 450px;
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
 }
 
 .card{
@@ -190,10 +193,27 @@
     padding: 3rem 2.5rem;
 }
 
+.plan .btn--block{
+  margin-top: 10rem;
+  font-size: 1.6rem;
+}
+
+.plan--popular:hover{
+  transform: scale(1.1);
+}
+
+.plan:hover{
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 1024px) {
 
   .block-plan{
     grid-template-columns:repeat(3, 1fr);
+    gap: 2rem 4rem;
+  }
+  .plan .btn--block{
+  font-size: 1.8rem;
   }
   
 }

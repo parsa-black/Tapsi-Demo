@@ -157,7 +157,7 @@
 
 .block-plan{
   display: grid;
-  gap: 7rem 4rem;
+  gap: 7rem 5rem;
   grid-template-columns: repeat(auto-fit,minmax(250px,320px));
   justify-content: center;
   margin-top: 5rem;

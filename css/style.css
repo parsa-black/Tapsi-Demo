@@ -157,12 +157,13 @@
 
 .block-plan{
   display: grid;
-  gap: 5rem 3rem;
-  margin-top: 4rem;
+  gap: 7rem 4rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,320px));
+  justify-content: center;
+  margin-top: 5rem;
 }
 
-.plan{
-  max-width: 450px;
+.plan{ 
   font-size: 1.8rem;
   transition: all 0.2s ease-out;
 }
@@ -209,13 +210,13 @@
 @media screen and (min-width: 1024px) {
 
   .block-plan{
-    grid-template-columns:repeat(3, 1fr);
+    /* grid-template-columns:repeat(3, 1fr); */
     gap: 2rem 4rem;
   }
   .plan .btn--block{
   font-size: 1.8rem;
   }
-  
+   
 }
 
 /* Header */
@@ -230,7 +231,7 @@
   font-size: 1.2rem;
 }
 
-.span-block{
+.span-block{ 
   display: block;
   font-size: 2.5rem;
 }
@@ -242,4 +243,11 @@
 
 .span-cycle{
   font-size: 1.4rem;
+}
+
+/* Continer */
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
 }

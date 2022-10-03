@@ -307,7 +307,6 @@
   display: none;
 }
 
-
 @media screen and (min-width: 1024px) {
 
   .contact-us{
@@ -317,6 +316,7 @@
     "icons form";
     grid-template-columns: 70fr 30fr;
   }
+
   .contact-us__form{
     grid-area: form;
   }
@@ -326,11 +326,11 @@
     display: block;
   }
 
-  .contact-us__address{
+  .contact-us__icons{
     grid-area: address;
   }
 
-  .contact-us__icons{
+  .contact-us__social{
     grid-area: icons;
   }
 }
@@ -342,12 +342,87 @@
   height: 40px;
 }
 
+.icon--small{
+  width: 24px;
+  height: 24px;
+}
+
 .icon-container{
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 100%;
 }
+
+.icon--primary{
+  fill: #445;
+}
+
+.contact-us__icons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.contact-us__icons .icon-holder{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon-holder__label{
+  margin-left: 1rem ;
+  display: block;
+  max-width: 250px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us__icons{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-us__icons .icon-holder{
+    flex-direction: column;
+    max-width: 150px;
+  }
+
+  .icon-holder__label{
+    order: 2;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+}
+
+/* social icons  */
+
+.contact-us__social .icon-container{
+  margin-left: 1rem;
+}
+
+.contact-us__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .contact-us__social{
+    justify-content: flex-end;
+  }
+
+  .contact-us__social .icon-container{
+    margin-left: 2rem;
+  }
+
+
+}
+

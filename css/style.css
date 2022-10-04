@@ -411,18 +411,89 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 @media screen and (min-width: 1024px) {
 
   .contact-us__social{
     justify-content: flex-end;
+      margin-bottom: 0;
   }
 
   .contact-us__social .icon-container{
     margin-left: 2rem;
   }
+}
 
+.contact-us__map img{
+  width: 100%;
+  height: auto;
+}
+
+/* form  */
+
+.form-wrapper{
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(red, green, blue, 0.06 );
+  padding: 5.2rem;
+}
+
+.form-wrapper h3{
+  margin: 5.2rem;
+  text-align: center;
+}
+
+.form-wrapper form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+input,
+textarea{
+  display: block;
+  outline: 0;
+  border: 0;
+}
+textarea{
+  resize: none;
+}
+
+::placeholder{
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-wrapper input,
+.form-wrapper textarea{
+  border-radius: 39px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 1.2rem 1.5rem;
+  font-family: 'IRANMarker';
+  margin-bottom: 1.5rem;
 
 }
 
+.form-wrapper input:focus,
+.form-wrapper textarea:focus{
+  border: 1px solid var(--color-primaray);
+}
+
+.form-wrapper textarea{
+    border-radius: 5px;
+      font-size: 1.1rem;
+  color: #333;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .contact-us__form{
+    margin-right: 3rem;
+  }
+  
+}

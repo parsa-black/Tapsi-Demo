@@ -2,6 +2,11 @@
     font-family: 'IRANMarker' ;
     src: url('../assets/fonts/IRANMarker.ttf') ;
 }
-body , button{
+body,
+button{
     font-family: 'IRANMarker';
+}
+::placeholder{
+    font-family: 'IRANMarker';
+    font-weight: 100;
 }

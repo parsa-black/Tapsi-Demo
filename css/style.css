@@ -700,3 +700,55 @@ textarea{
     transform: rotate(45deg)  translate(-8px, -8px);
       margin: 8px 0;
 }
+
+/* Hero  */
+
+.hero-section{
+  width: 100%;
+  height: 478px;
+}
+
+.hero-section img{
+  width: 100%;
+  height: auto;
+}
+
+.hero-wrraper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 478px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-btn{
+  background-image: 
+  linear-gradient(51deg,rgba(23,26,60,.7) 5%,
+  rgba(23,26,60,.3) 95%);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.intro-btn h1,h2{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.intro-btn h2{
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.intro-btn__passenger{
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+}

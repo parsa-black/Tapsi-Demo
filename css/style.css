@@ -809,5 +809,52 @@ textarea{
 .intro-btn__passenger p{
   font-size: 1.2rem;
 }
+}
+
+/* Services navbar  */
+
+.services__tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services__tabs a{
+  display: block;
+  text-decoration: none;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 95px;
+}
+
+.services__tabs a >p{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.services__tabs img{
+  max-width: 85px;
+}
+
+.services__tabs .tab{
+  opacity: 0.5;
+  transition: all 0.2s ease-out;
+}
+
+.services__tabs .tab:hover{
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .services__tabs a >p{
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.services__tabs img{
+  width: 100%;
+}
 
 }

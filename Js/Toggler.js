@@ -4,3 +4,4 @@ toggler.addEventListener("click", (e) => {
     console.log("Clicked!");
     navbar.classList.toggle("nav__expanded");
 });
+

@@ -256,6 +256,7 @@
 
 .feature{
   display: grid;
+  margin: 5rem 3rem;
 }
 
 .feature__text{
@@ -285,11 +286,15 @@
     grid-template-columns: repeat(2,1fr);
   }
   .feature__image{
+    width: 100%;
     order: 2;
     margin-bottom: 0;
   }
   .feature__detail{
     order: 1;
+  }
+  .feature__detail.second-feature{
+    order: 2;
   }
   .feature__image > img{
     width: 100%;
@@ -703,6 +708,10 @@ textarea{
 
 /* Hero  */
 
+.hero-wrraper.container{
+  margin-top: 7rem;
+}
+
 .hero-section{
   width: 100%;
   height: 478px;
@@ -724,6 +733,10 @@ textarea{
   align-items: center;
 }
 
+.hero-wrraper.container{
+  margin-top: rem;
+}
+
 .intro-btn{
   background-image: 
   linear-gradient(51deg,rgba(23,26,60,.7) 5%,
@@ -735,7 +748,7 @@ textarea{
   width: 270px;
 }
 
-.intro-btn h1,h2{
+.intro-btn .htag{
   font-size: 2.5rem;
   color: #fff;
 }
@@ -755,7 +768,7 @@ textarea{
 }
 
 .intro-btn__passenger.no-bgc{
-  background: url(https://tapsi.ir/images/ic-driver.svg?9815f370847ab786dd8907e0f44c3763);
+  background-color: rgba(23,26,60,0);
   color: var(--color-white);
   border: 1px solid var(--color-white);
 }
@@ -781,11 +794,16 @@ textarea{
   font-size: 1.1rem;
 }
 
+
 @media screen and (min-width: 768px) {
 
-  .hero-wrraper{
+.hero-wrraper.container{
+  margin-top: 12rem;
+}
+
+.hero-wrraper{
     justify-content: flex-start;
-  }
+}
 
 .intro-wrraper{
   flex-direction: row;
@@ -913,4 +931,20 @@ textarea{
 }
 }
 
+.block{
+  padding: 4rem 2rem;
+}
 
+.block-heading{
+  margin-top: 6rem;
+}
+.block__heading{
+  margin-top: 5rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .block{
+  padding: 4rem 2rem;
+}
+}

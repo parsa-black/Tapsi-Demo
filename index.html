@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Tapsi Demo</title>
     <!-- see in 1400x888  -->
   </head>
@@ -103,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section class="services container block">
+    <section class="services container block" data-aos="fade-up">
       <h2 class="services__title block-heading">سرویس های تپسی</h2>
       <div class="services__tabs">
         <a class="tab active" data-tab-target="nav-classic-tab">
@@ -537,6 +538,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./Js/Tabs.js"></script>
     <script src="Js/Toggler.js"></script>
   </body>
